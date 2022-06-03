@@ -1,0 +1,12 @@
+Inspector Team#5 (Trojan)
+
+Project
+40 - code standards
+50 - Visual Deagram
+
+Execution
+20 - 4 web Page + 4 forms
+17 - main Page + logo ( no tiene logo del negocio)
+20 - navegation
+16 - Visual Consistency 
+5 - QUERY - STRING (Solo sirve en Singin.html)
