@@ -4,50 +4,90 @@
 <html>
 
 <head>
-    <title>FORGOT PASSWORD</title>
+    <title>FORGOT PASSWORD | Technology Store</title>
     <style>
-        fieldset {
+        table {
+            width: 350px;
             background-color: #ffe5f0;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            border-collapse: collapse;
+            background-color: beige;
+            padding: 5px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+
         }
     </style>
 </head>
 <link rel="icon" href="../img/recoverd.jpg">
 
 <body>
-    <img src="../img/logo.jfif" width="80" height="50"><br /><br />
+    <img src="../img/logo.jfif" width="100" height="auto">
+    <br /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="../index.html">HOME</a>
 
     <center>
         <p>
             <h1>TECHNOLOGY </h1>
         </p>
-    </center>
-    <center>
         <p>
-            <h3>FORGOT PASSWORD</h3>
+            <h2>FORGOT PASSWORD</h2>
         </p>
         <br />
         <center>
             <form>
-                <fieldset style="width:275px">
-                    <img src="../img/forgot.png" width="100" height="100">
-                    <p align=left>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Username:&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="username" size="15" required><br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="email" size="15" required><br /><br />
-
-                        <center><input type="submit" value="Recover password">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="login.html">Cancel</a>&nbsp;&nbsp;&nbsp;</center><br /><br />
-                    </p>
+                <table>
+                    <tr>
+                        <td>
+                            <br>
+                            <img src="../img/forgot.png" width="100" height="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter your email, or username and we'll send you a link to change your password.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="txtemailUsername" id="txtemailUsername" value="Email or Username"
+                                size="40" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Change my password" size="40px" /> </td>
+                    </tr>
+                    <tr>
+                        <td style="border-top:1px solid grey">
+                            <a href="login.html"><strong>Back to Login</strong></a>
+                        </td>
+                    <tr>
+                        <td style="background-color:#daeaf2 ;">
+                            You do not have an account?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#daeaf2 ;">
+                            <a href="signUp.html"><strong>Create new Account</strong></a>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </center>
         <br />
-        <p><strong>
-                <center> ©All rights reserved GROUP 2 </center>
-            </strong></p>
+        <footer>
+            <strong>©All rights reserved GROUP 2 </strong>
+        </footer>
     </center>
 </body>
 
