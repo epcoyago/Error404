@@ -6,6 +6,10 @@
 <head>
     <title>Technology Store Registration</title>
     <style>
+        html {
+            background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+        }
+
         table {
             width: 460px;
             background-color: #ffffeb;
@@ -32,8 +36,12 @@
 </head>
 
 <body>
-    <img src="../img/logo.jfif" width="100" height="auto">
-    <br /><br /><br />
+    <div class="image">
+		<img src="../img/logo.jfif" width="80"height="65" align="left">
+		<img src="../img/superTech.png" width="80"height="65"align="right"><br/>
+	</div>	
+	<br /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="../index.html">HOME</a>
 
     <center>
@@ -77,7 +85,7 @@
 
                 <tr>
                     <td>
-                        <label for="Gender">Gender:</label>
+                        <label for="txtGender">Gender:</label>
                     </td>
                     <td>
                         <input type="radio" id="male" name="gender" value="M" required>
@@ -93,7 +101,7 @@
                         <label for="txtEmail">Email:<b>*</b></label>
                     </td>
                     <td>
-                        <input type="text" id="txtEmail" size="20" required>
+                        <input type="email" id="txtEmail" size="20" required>
                     </td>
                 </tr>
 
@@ -112,6 +120,7 @@
                     </td>
                     <td>
                         <select name="cmbCountry" id="cmbCountry">
+							<option value="Select the country of origin">Select the country of origin</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
                             <option value="Algeria">Algeria</option>
@@ -236,14 +245,14 @@
 
                 <tr>
                     <td colspan="2">
-                        <center><input id="button" type="submit" /></center>
+                        <center><input id="button" type="submit" value="Submit"/></center>
                     </td>
                 </tr>
 
             </table>
         </form>
-
-        <footer><strong>©All rights reserved GROUP 2</strong></footer>
+        <br /><br />
+        <p><strong> © All rights reserved TEAM 2 </strong></p>	
     </center>
 </body>
 

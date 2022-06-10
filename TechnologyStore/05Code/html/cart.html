@@ -7,6 +7,10 @@
     <title>SHOPPING CART | Technology Store</title>
 
     <style>
+        html {
+            background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+        }
+
         table {
             background-color: beige;
         }
@@ -14,8 +18,10 @@
 </head>
 
 <body>
-    <img src="../img/logo.jfif" width="100" height="auto">
-    <br /><br /><br />
+    <div class="image">
+			<img src="../img/logo.jfif" width="80"height="65" align="left">
+			<img src="../img/superTech.png" width="80"height="65"align="right"><br/>
+	</div>	<br /><br /><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="../index.html">HOME</a>
     <center>
@@ -28,58 +34,70 @@
 
     <center>
         <br> <br>
+        <form>
 
-        <table width="70%" border="1">
-            <tbody>
-                <tr>
-                    <th colspan="5">
-                        <h2>SHOPPING CART</h2>
-                    </th>
-                </tr>
+            <table width="70%" border="1">
+                <tbody>
+                    <tr>
+                        <th colspan="5">
+                            <h3>SHOPPING CART</h3>
+                        </th>
+                    </tr>
 
-                <tr align="center">
-                    <td><b />PRODUCT</td>
-                    <td><b />PRICE</td>
-                    <td><b />QUANTITY</td>
-                    <td><b />SUBTOTAL</td>
-                    <td><b /></td>
-                </tr>
+                    <tr align="center">
+                        <td><b />PRODUCT</td>
+                        <td><b />PRICE</td>
+                        <td><b />QUANTITY</td>
+                        <td><b />SUBTOTAL</td>
+                        <td><b /></td>
+                    </tr>
 
-                <tr align="center">
-                    <td>Product 1</td>
-                    <td>50,15</td>
-                    <td><input type="number" id="tentacles" name="num" value="1" size="3" maxlength="3" min="0"></td>
-                    <td></td>
-                    <td> <img src="../img/trash.jpg"></td>
-                </tr>
+                    <tr align="center">
+                        <td>Product 1</td>
+                        <td>50,15</td>
+                        <td><input type="number" id="numProduct1" name="numProduct1" value="1" size="3" maxlength="3"
+                                min="0">
+                        </td>
+                        <td></td>
+                        <td> <img src="../img/trash.jpg"></td>
+                    </tr>
 
-                <tr align="center">
-                    <td>Product 2</td>
-                    <td>13.40</td>
-                    <td><input type="number" id="tentacles" name="num" value="1" size="3" maxlength="3" min="0"></td>
-                    <td></td>
-                    <td> <img src="../img/trash.jpg"></td>
-                </tr>
+                    <tr align="center">
+                        <td>Product 2</td>
+                        <td>13.40</td>
+                        <td><input type="number" id="numProduct2" name="numProduct2" value="1" size="3" maxlength="3"
+                                min="0">
+                        </td>
+                        <td></td>
+                        <td> <img src="../img/trash.jpg"></td>
+                    </tr>
 
-                <tr align="center">
-                    <td>Product 3</td>
-                    <td>25.10</td>
-                    <td><input type="number" id="tentacles" name="num" value="1" size="3" maxlength="3" min="0"></td>
-                    <td></td>
-                    <td> <img src="../img/trash.jpg"></td>
-                </tr>
+                    <tr align="center">
+                        <td>Product 3</td>
+                        <td>25.10</td>
+                        <td><input type="number" id="numProduct3" name="numProduct3" value="1" size="3" maxlength="3"
+                                min="0">
+                        </td>
+                        <td></td>
+                        <td> <img src="../img/trash.jpg"></td>
+                    </tr>
 
-                <tr align="center">
-                    <th colspan="3" align="right">TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <td></td>
+                    <tr align="center">
+                        <th colspan="3" align="right">TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </th>
+                        <td></td>
 
-                    <td> <img src="../img/payout.jpg"></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <br><br>
-        <p><strong> ©All rights reserved GROUP 2</strong></p>
+                        <td>
+                            <input type="submit" value="Payment" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <br /><br />
+        <footer>
+            <strong> ©All rights reserved TEAM 2</strong>
+        </footer>
     </center>
 </body>
 

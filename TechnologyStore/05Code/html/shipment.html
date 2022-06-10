@@ -9,23 +9,22 @@
 	<center>	
 		<br>
 		<br>		<br>
-
+		<form>
 		<table  width="70%" border="1""   >
 			<tr>
-				<td><LABEL for="txtNombre" >&nbsp;&nbsp;&nbsp;&nbsp;Full name &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="text" id="txtNombre" required><BR></td>
+				<td><LABEL for="txtfullname" >&nbsp;&nbsp;&nbsp;&nbsp;Full name &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="text" name="txtfullname" id="txtfullname"  required><BR></td>
 			</tr>
 			<tr>
-				<td><LABEL for="txtDireccion" >&nbsp;&nbsp;&nbsp;&nbsp;Address &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="text" id="txtDireccion" required><BR></td>
+				<td><LABEL for="txtAddress" >&nbsp;&nbsp;&nbsp;&nbsp;Address &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="text" name="txtAddress" id="txtAddress" required><BR></td>
 			</tr>
-
 			  <tr>
-			  	<td><LABEL for="txtParroqui" >&nbsp;&nbsp;&nbsp;&nbsp;Parish &nbsp;&nbsp;&nbsp;&nbsp; </LABEL></td>
+			  	<td><LABEL for="txtParish" >&nbsp;&nbsp;&nbsp;&nbsp;Parish &nbsp;&nbsp;&nbsp;&nbsp; </LABEL></td>
 			  	<td>
-				     &nbsp;&nbsp;&nbsp;&nbsp;<select name="cmbParroquia" id="cmbParroquia"required>
+				     &nbsp;&nbsp;&nbsp;&nbsp;<select name="cmbParish" id="cmbParish"required>
 				     	<option value="LaConcepción">Selection</option>
-				      <option value="LaConcepción">La Concepción </option>
+				      <option value="LaConcepción">La Concepcion </option>
 				      <option value="Cochapamba ">Cochapamba  </option>
 				      <option value="Atahualpa">Atahualpa</option>
 				      <option value="Jipijapa">Jipijapa</option>
@@ -34,25 +33,28 @@
 			  </tr>
 
 			<tr>
-				<td><LABEL for="foneTelefono" >&nbsp;&nbsp;&nbsp;&nbsp;Cellphone &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="tel" id="foneTelefono" required><BR></td>
+				<td><LABEL for="foneCellphone" >&nbsp;&nbsp;&nbsp;&nbsp;Cellphone &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="Cellphone" name="txtCellphone" id="txtCellphone" required><BR></td>
 			</tr>
 
 			<tr>
 				<td><LABEL for="txtemail" >&nbsp;&nbsp;&nbsp;&nbsp;E-Mail &nbsp;&nbsp;&nbsp;&nbsp;</LABEL></td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="email" id="txtemail" required><BR></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="email" name="txtemail" id="txtemail" required><BR></td>
 			</tr>
 
 			  <tr>
 			  	  <td><LABEL for="selectG">&nbsp;&nbsp;&nbsp;&nbsp;Additional indications&nbsp;&nbsp;&nbsp;&nbsp; </LABEL></td>
-			  	  <td>&nbsp;&nbsp;&nbsp; <textarea name="message" rows="10" cols="30=">
+			  	  <td>&nbsp;&nbsp;&nbsp; <textarea name="txtmessage" rows="10" cols="30=">
 			  	  </textarea><br></td>
 			  </tr>
 
-			  <tr>
-			  	<th colspan="2" ><INPUT type="submit" value="Ship">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="Reset"> </th>
-			  </tr>
+			    <tr>
+                    <td colspan="2">
+                        <center><input id="button" type="submit" /></center>
+                    </td>
+                </tr>
 			</table>
+			</form>
 	</center>
 </body>
 </html>

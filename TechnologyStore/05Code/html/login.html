@@ -1,11 +1,14 @@
 <!--Autor Eunice Coyago-->
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>LOGIN</title>
 		<style>
+			html {
+				background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+			}
 			fieldset {
-			  background-color: #dcd9f8;
+			  background-color: #ffffeb;
 			}
 		</style>
 	</head>
@@ -13,7 +16,10 @@
 	
 	<body>
 	
-		<img src="../img/logo.jfif" width="90"height="100"><br/><br/><br/>
+		<div class="image">
+			<img src="../img/logo.jfif" width="80"height="65" align="left">
+			<img src="../img/superTech.png" width="80"height="65"align="right"><br/>
+		</div>	<br/><br/><br/>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="../index.html">HOME</a>
 	
@@ -30,15 +36,15 @@
 					<p align=left>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" id="username" size="15" required><br/>
+						<input type="text" id="username" name="user" size="15" required /><br/>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="password" id="password" size="15" required><br/><br/>
+						<input type="password" id="password" size="15" required /><br/><br/>
 						
-						<input type="checkbox" id="cbox1" value="RememberMe"> Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" id="cbox1" value="RememberMe"/> Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="forgotPass.html">Forgot password?</a>
-						<center><input type="submit" value="Sign In"></center><br/><br/>
+						<center><input type="submit" value="Sign In" /></center><br/><br/>
 						You do not have an account ?<br/>
 						<button><a href="signUp.html">Create</button></a></center>
 					</p>
@@ -48,7 +54,7 @@
 			
 			
 			<br/>
-			<p><strong><center> ©All rights reserved GROUP 2 </center></strong></p>		
+			<p><strong><center> ©All rights reserved TEAM 2 </center></strong></p>		
 		</center>
 	</body>
 </html>
