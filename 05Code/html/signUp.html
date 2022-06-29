@@ -5,69 +5,44 @@
 
 <head>
     <title>Technology Store Registration</title>
-    <style>
-        html {
-            background: linear-gradient(to right, #b2e2f2, #b0f2c2);
-        }
 
-        table {
-            width: 460px;
-            background-color: #ffffeb;
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        td {
-            border-collapse: collapse;
-            padding: 5px;
-            text-align: left;
-        }
-
-        a {
-            text-decoration: none;
-            color: blue;
-
-        }
-
-        b {
-            color: red;
-        }
-    </style>
 </head>
 
-<body>
+<body style="background: linear-gradient(to right, #b2e2f2, #b0f2c2);">
     <div class="image">
 		<img src="../img/logo.jfif" width="80"height="65" align="left">
 		<img src="../img/superTech.png" width="80"height="65"align="right"><br/>
 	</div>	
 	<br /><br /><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="../index.html">HOME</a>
+    <a  style=" text-decoration: none; color: blue;" href="../index.html">HOME</a>
 
     <center>
         <h1>Technology Store</h1>
         <h3>Create Account </h3>
 
         <form>
-            <table>
+            <table style="width: 460px; background-color: #ffffeb; border: 1px solid black; border-collapse: collapse;">
                 <tr>
-                    <td colspan="2" style="text-align:center;">
+                    <td colspan="2" style="text-align:center;border-collapse: collapse; padding: 5px;">
                         <img src="../img/register.png" width="100" height="100">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtFullName">Full name:<b>*</b></label>
+                    <td style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtFullName">Full name:<b style="text-decoration: none;
+                            color: blue;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="text" name="txtFullName" id="txtFullName" size="20" />
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtúsername">Username:<b>*</b></label>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtúsername">Username:<b style="text-decoration: none;
+                            color: blue;">*</b></label>
                     </td>
                     <td>
                         <input type="text" id="txtUserame" size="20" required>
@@ -75,19 +50,19 @@
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtBirthDate">Birth date:<b>*</b></label>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtBirthDate">Birth date:<b style=" color: red;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="date" name="txtBirthDate" id="txtBirthDate" value="2000-01-01" required />
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <label for="txtGender">Gender:</label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="radio" id="male" name="gender" value="M" required>
                         <label for="Male">Male</label>
                         <br />
@@ -97,28 +72,28 @@
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtEmail">Email:<b>*</b></label>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtEmail">Email:<b style=" color: red;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="email" id="txtEmail" size="20" required>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtPhoneNumber">Phone number:<b>*</b></label>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtPhoneNumber">Phone number:<b style=" color: red;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="text" name="txtPhoneNumber" id="txtPhoneNumber" size="10" />
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <label for="cmbCountry">Country of origin:</label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <select name="cmbCountry" id="cmbCountry">
 							<option value="Select the country of origin">Select the country of origin</option>
                             <option value="Afghanistan">Afghanistan</option>
@@ -224,9 +199,9 @@
 
                 <tr>
                     <td>
-                        <label for="txtPassword">Password:<b>*</b></label>
+                        <label for="txtPassword">Password:<b style=" color: red;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="password" id="txtPassword" required />
 
                     </td>
@@ -234,17 +209,17 @@
                 </tr>
 
                 <tr>
-                    <td>
-                        <label for="txtConfirmPass">Password:<b>*</b></label>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
+                        <label for="txtConfirmPass">Password:<b style=" color: red;">*</b></label>
                     </td>
-                    <td>
+                    <td  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <input type="password" id="txtConfirmPass" required />
                     </td>
 
                 </tr>
 
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2"  style="border-collapse: collapse; padding: 5px; text-align: left;">
                         <center><input id="button" type="submit" value="Submit"/></center>
                     </td>
                 </tr>
