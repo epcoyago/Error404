@@ -1,53 +1,100 @@
 <!--Autor Eunice Coyago-->
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>LOGIN</title>
 
-	</head>
-	<link rel="icon" href="../img/login1.png">
-	
-	<body style="background: linear-gradient(to right, #b2e2f2, #b0f2c2);">
-	
-		<div class="image">
-			<img src="../img/logo.jfif" width="80"height="65" align="left">
-			<img src="../img/superTech.png" width="80"height="65"align="right"><br/>
-		</div>	<br/><br/><br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="../index.html">HOME</a>
-	
-		<center>	
-		
-			<p> <h3>Login&nbsp;&nbsp;-&nbsp;&nbsp;Register Account </h3></p>
-			<br/>
-			
-			<center>
-				<form>
-				
-					<fieldset style="width:300px ;background-color: #ffffeb;">
-					<img src="../img/user.png" width="100"height="100">
-					<p align=left>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" id="username" name="user" size="15" required /><br/>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="password" id="password" size="15" required /><br/><br/>
-						
-						<input type="checkbox" id="cbox1" value="RememberMe"/> Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="forgotPass.html">Forgot password?</a>
-						<center><input type="submit" value="Sign In" /></center><br/><br/>
-						You do not have an account ?<br/>
-						<button><a href="signUp.html">Create</button></a></center>
-					</p>
-				</form>
-			</center>
-			
-			
-			
-			<br/>
-			<p><strong><center> ©All rights reserved TEAM 2 </center></strong></p>		
-		</center>
-	</body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Login | Technology Store</title>
+
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+	<style>
+		html {
+			background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+		}
+
+		.row {
+			display: flex;
+		}
+
+		.column {
+			flex: 50%;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		a {
+			text-decoration: none;
+			color: blue;
+
+		}
+
+		fieldset {
+			width: 300px;
+			background-color: #ffffeb;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		footer {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="column">
+			<img src="../img/logo.jfif" alt="Logo Error404" width="80" height="65">
+		</div>
+		<div class="column" style="text-align:right">
+			<img src="../img/superTech.png" alt="Logo SuperTech" width="80" height="65">
+		</div>
+	</div>
+	<br /><br /><br />
+
+	<h1><a href="../index.html" style="color: black;">Technology Store</a></h1>
+	<br />
+
+	<form>
+
+		<fieldset>
+			<h3>Login</h3>
+			<img src="../img/user.png" alt="Login" width="100" height="100">
+
+			<p style="text-align:center;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<input type="text" id="username" name="user" size="15" required /><br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="password" id="password" size="15" required /><br /><br />
+
+				<input type="checkbox" id="cbox1" value="RememberMe" /> Remember me
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="forgotPass.html"><strong>Forgot password?</strong></a>
+
+				<input type="submit" value="Sign In" /><br /><br />
+
+				You do not have an account ?<br />
+				<a href="signUp.html"><strong>Create Account</strong></a>
+			</p>
+		</fieldset>
+	</form>
+
+	<footer><strong>©All rights reserved TEAM 2 </strong></footer>
+</body>
+
 </html>

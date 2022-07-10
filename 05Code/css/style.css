@@ -1,0 +1,44 @@
+html {
+    background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.menuBar {
+    width: 80%;
+    border: 1px solid black;
+    background-color: rgb(146, 155, 251);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
