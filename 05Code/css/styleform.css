@@ -84,8 +84,12 @@ a {
 }
 
 
-.forgot {
+.frmPass {
     text-align: center;
+}
+
+p {
+    text-align: left;
 }
 
 .btnPass {
