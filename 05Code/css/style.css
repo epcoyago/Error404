@@ -42,3 +42,73 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+.container {
+    padding: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 50px 20px;
+
+}
+
+.field {
+    padding: 10px;
+    width: 280px;
+    border: solid 1px #ccc;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20 px 15px;
+    text-decoration: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green {
+    color: white;
+    background-color: rgb(146, 155, 251);
+}
+
+.btn-green:hover {
+    background-color: rgb(146, 155, 251);
+}
+
+.btn-green:active {
+    background-color: rgb(146, 155, 251);
+}
+
+form {
+    margin: auto;
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 45px;
+    box-shadow: 0px 15px 10px #333;
+}
+
+/*Codigo para Productos*/
+.general {
+    box-shadow: 0px 15px 15px 10px rgb(131, 131, 131);
+    width: 900px;
+    padding: 50px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.desciption{
+    width: 300px;
+    height: 100px;
+    border-radius: 190px;
+    /*izquierda,abajo ,centro, arriba*/
+    box-shadow:  10px 10px 20px 10px rgb(174, 180, 250);
+}

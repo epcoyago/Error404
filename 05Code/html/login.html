@@ -5,98 +5,52 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>Login | Tienda Tecnológica</title>
 
-	<title>Login | Technology Store</title>
-
-	<style>
-		html {
-			background: linear-gradient(to right, #b2e2f2, #b0f2c2);
-		}
-
-		.row {
-			display: flex;
-		}
-
-		.column {
-			flex: 50%;
-		}
-
-		h1 {
-			text-align: center;
-		}
-
-		a {
-			text-decoration: none;
-			color: blue;
-
-		}
-
-		fieldset {
-			width: 300px;
-			background-color: #ffffeb;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-
-		footer {
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	</style>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-	<div class="row">
-		<div class="column">
-			<img src="../img/logo.jfif" alt="Logo Error404" width="80" height="65">
-		</div>
-		<div class="column" style="text-align:right">
-			<img src="../img/superTech.png" alt="Logo SuperTech" width="80" height="65">
-		</div>
-	</div>
-	<br /><br /><br />
+    <div class="row">
+        <div class="column">
+            <img src="../img/logo.jfif" alt="Logo Error404" width="80px" height="65px">
+        </div>
+        <div class="column" style="text-align:right">
+            <img src="../img/superTech.png" alt="Logo SuperTech" width="80px" height="65px">
+        </div>
+    </div>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="../index.html"><strong>Inicio</strong></a>
+    <h1>Tienda Tecnológica</h1>
 
-	<h1><a href="../index.html" style="color: black;">Technology Store</a></h1>
-	<br />
-
-	<form>
-
-		<fieldset>
-			<h3>Login</h3>
-			<img src="../img/user.png" alt="Login" width="100" height="100">
-
-			<p style="text-align:center;">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-				Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-				<input type="text" id="username" name="user" size="15" required /><br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-				Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="password" id="password" size="15" required /><br /><br />
-
-				<input type="checkbox" id="cbox1" value="RememberMe" /> Remember me
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="forgotPass.html"><strong>Forgot password?</strong></a>
-
-				<input type="submit" value="Sign In" /><br /><br />
-
-				You do not have an account ?<br />
-				<a href="signUp.html"><strong>Create Account</strong></a>
-			</p>
-		</fieldset>
-	</form>
-
-	<footer><strong>©All rights reserved TEAM 2 </strong></footer>
+    <form>
+        <center>
+            <h3>Login</h3>
+            <img src="../img/user.png" alt="Login" width="100" height="100"><br/>
+        </center>
+        
+        Usuario: <br/>
+        <input type="text" class="field" id="username" name="user" size="10" required><br/>
+        Contraseña: <br/>
+        <input type="password" class="field" id="password" size="10" required><br/><br/>
+                
+        <a href="forgotPass.html"><strong>Olvidó su contraseña?</strong></a><br/>
+        
+        <p class="center-content">
+            <input type="submit" class="btn btn-green" value="Ingresar"><br/><br/>
+        </p>
+        <center>
+            No tiene cuenta ?<br/>
+        </center>   
+        <p class="center-content">
+            <a class="btn btn-green" href="signUp.html">Crear cuenta</a>
+        </p>
+    </form>
+    <br/>
+    <footer><strong>©Todos los derechos reservados Grupo 2 </strong></footer>
 </body>
 
 </html>
