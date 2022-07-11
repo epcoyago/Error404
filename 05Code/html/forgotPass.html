@@ -5,59 +5,14 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/styleform.css">
 
     <title>Forgot Password | Technology Store</title>
-
-    <style>
-        html {
-            background: linear-gradient(to right, #b2e2f2, #b0f2c2);
-        }
-
-        .row {
-            display: flex;
-        }
-
-        .column {
-            flex: 50%;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        table {
-            width: 350px;
-            background-color: #ffe5f0;
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        td {
-            border-collapse: collapse;
-            background-color: beige;
-            padding: 5px;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        footer {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,49 +24,31 @@
             <img src="../img/superTech.png" alt="Logo SuperTech" width="80" height="65">
         </div>
     </div>
+
     <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="../index.html"><strong>Inicio</strong></a>
+    
     <h1>Tienda Tecnológica</h1>
 
-    <form>
-        <table>
-            <tr>
-                <td>
-                    <h3>Forgot password</h3>
-                    <br>
-                    <img src="../img/forgot.png" alt="Forgot Password" width="100" height="100">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Enter your email, or username and we'll send you a link to change your password.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" name="txtemailUsername" id="txtemailUsername" value="Email or Username"
-                        size="40" required />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="Change my password" /> </td>
-            </tr>
-            <tr>
-                <td style="border-top:1px solid grey">
-                    <a href="login.html"><strong>Back to Login</strong></a>
-                </td>
-            <tr>
-                <td style="background-color:#daeaf2 ;">
-                    You do not have an account?
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color:#daeaf2 ;">
-                    <a href="signUp.html"><strong>Create Account</strong></a>
-                </td>
-            </tr>
-        </table>
+    <form class="forgot">
+        <h3 class="Pass">Forgot password</h3>
+        <img src="../img/forgot.png" alt="Forgot Password" width="100" height="100">
+        <p>
+            Enter your email, or username and we'll send you a link to change your password.
+        </p>
+        <input type="text" name="txtemailUsername" id="txtemailUsername" placeholder="Email or Username" size="40"
+            required />
+        <br> <br>
+        <input class="btnPass" type="submit" value="Change my password" />
+        <br> <br>
+
+        <a href="login.html"><strong>Back to Login</strong></a>
+
+        <p>
+            You do not have an account?
+        </p>
+        <a href="signUp.html"><strong>Create Account</strong></a>
+
     </form>
     <br /><br />
 

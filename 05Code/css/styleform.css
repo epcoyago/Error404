@@ -1,18 +1,23 @@
 .btn {
     border-radius: 3px;
     display: inline-block;
-    padding: 20 px 15px;
+    padding: 20px 15px;
     text-decoration: 0 1px 0 rgba(255, 255, 255, 0.3);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .btn-green {
     color: white;
-    background-color: rgb(146, 155, 251);
+    background-color: rgb(75, 75, 239);
 }
 
 .btn-green:hover {
+    opacity: 0.8;
     background-color: rgb(146, 155, 251);
+    color: black;
+    font-weight: bold;
+    border-color: white;
 }
 
 .btn-green:active {
@@ -33,6 +38,7 @@ input,
 textarea {
     outline: blue;
     width: 290px;
+    resize: none;
 }
 
 .field {
@@ -64,31 +70,47 @@ h1 {
 
 h3 {
     margin: 50px;
+    text-align: center;
 }
 
 i {
     width: 40px;
 
 }
-/*Codigo de cellphone*/
-div#general {
-    box-shadow: 0px 15px 15px 10px rgb(131, 131, 131);
-    width: 900px;
-    padding: 50px;
-    border-radius: 4px;
-    margin: 0 auto;
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.forgot {
     text-align: center;
 }
 
-img {
+.btnPass {
+    padding: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
     width: auto;
-    height: auto;
-    margin: 25px;
 }
-.desciption{
-    width: 240px;
-    height: 90px;
-    border-radius: 190px;
-    /*izquierda,abajo ,centro, arriba*/
-    box-shadow:  10px 10px 20px 10px rgb(174, 180, 250);;
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+html {
+    background: linear-gradient(to right, #b2e2f2, #b0f2c2);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
 }
