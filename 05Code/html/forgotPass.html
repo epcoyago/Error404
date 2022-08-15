@@ -12,7 +12,7 @@
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/styleLogin.css">
-    <title>Recuperar Contraseña | Tienda Tecnológica</title>
+    <title>Recuperar contraseña</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
 										<br><br><br>
 										<div class="row">
 											
-											<h2>Recupera tu contraseña</h2>
+											<h2>Recuperar contraseña</h2>
 											<br><br><br>	
 										</div>
                                         <img src="../img/forgot.png" alt="Forgot Password" width="100" height="100">
@@ -65,21 +65,19 @@
                                       </p>
 										<div class="row">
 											<br><br><br>	
-											<form control="" class="form-group">
+											<form @submit.prevent="sendForm()" control="" class="form-group">
 												<div class="    ">
-                                                    <input class="form__input"type="text" name="txtemailUsername" id="txtemailUsername" placeholder="Usuario o Correo" required />
-												</div>
-
-
-												  <div class="col-md-12" >
-													<br>
-													<button class="btn btn-primary form-control">Recuperar</button>
+                                                    <input class="form__input" type="email" name="txtemailUsername" id="txtemailUsername" placeholder="Usuario o Correo" :class="{'error':validaEmail}" v-model="form.email" required  />
+													<div class="col-md-12" >
+														<br>
+														<button class="btn btn-primary form-control">Recuperar contraseña</button>
 													</div>
+												</div>
 												
 											</form>
 										</div>  
 										<div class="row">
-											<p>¿No tienes cuenta? <a href="signUp.html">Registrate aqui</a></p>
+											<p>¿No tienes cuenta? <a href="signUp.html" @click="form.type=1" v-if="form.type!=1" >Registrarme</a> </p>
 										</div>
 									</div>
 								</div>
@@ -90,18 +88,14 @@
 					</p>
 					</form>
 				</center>
-
-
-
 				<br />
-
 				</center>
 			</div>
 			<div class="container p-2 my-2 bg-dark text-white">
 				<h5 style="text-align: center;">TODOS LOS DERECHOS RESERVADOS GRUPO2</h5>
 			</div>
+			<script src="../js/validation.js"></script>
+
 </body>
-
-
 
 </html>
