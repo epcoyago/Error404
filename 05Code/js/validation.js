@@ -1,6 +1,6 @@
 //forgotPass
 new Vue({
-    el:".divlogin",
+    el:".container-fluid",
     data:{        
         form:{
             type:0, // 0 = Login , 1 = Registro 2- Recuperar contraseña
