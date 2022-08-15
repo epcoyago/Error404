@@ -76,12 +76,12 @@
 
                   <div class="col-md-7">
                     <label class="form-label">Nombre completo</label>
-                    <input type="text" class="form-control" name="txtfullname" id="txtfullname" required>
+                    <input type="text" class="form-control" name="txtfullname" id="txtfullname" maxlength="50" required autocomplete="off" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == [32])|| event.charCode == [209] || event.charCode == [241]" required>
                   </div>
 
                   <div class="col-md-5">
                     <label class="form-label">Nombre de Usuario</label>
-                    <input type="text" class="form-control" name="txtUserame" id="txtUserame" required>
+                    <input type="text" class="form-control" name="txtUserame" id="txtUserame" maxlength="50" required autocomplete="off" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))|| event.charCode == [209] || event.charCode == [241]" required>
                     <br>
                   </div>
                   <br>
