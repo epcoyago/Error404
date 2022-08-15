@@ -5,74 +5,77 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
-	<title>Envío | Tienda Tecnológica</title>
+    <script src="../js/validation.js"></script>
+    <title>Envío | Tienda Tecnológica</title>
 </head>
 
 <body>
-	<br>
-	<center>
-		<h1>Envío</h1>
-	</center>
-	
-	<div class="container p-3 my-3  text-black">
-	<form class="row" action="">
+    <br>
+    <center>
+        <h1>Envío</h1>
+    </center>
+    
+    <div class="container p-3 my-3  text-black">
+    <form class="row" action="">
 
-		<div class="col-md-6">
-		  <label class="form-label">Nombre completo</label>
-		  <input type="text" class="form-control" name="txtfullname" id="txtfullname" required>
-		</div>
+        <div class="col-md-6">
+          <label for="validationServer01" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" name="txtfullname" id="txtfullname" maxlength="50" required autocomplete="off" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == [32])|| event.charCode == [209] || event.charCode == [241]">
+        </div>
 
-		<div class="col-md-6">
-		  <label class="form-label">Dirección</label>
-		  <input type="text" class="form-control" name="txtAddress" id="txtAddress" required>
-		</div>
-		<div class="col-md-4">
-		  <label class="form-label">Parroquia</label>
-		  <select class="form-select" name="cmbParish" class="field" id="cmbParish" required>
-			<option value="">Seleccione la parroquia</option>
-			<option value="LaConcepción">La Concepcion </option>
-			<option value="Cochapamba ">Cochapamba </option>
-			<option value="Atahualpa">Atahualpa</option>
-			<option value="Jipijapa">Jipijapa</option>
-		</select>
-		</div>
-		<div class="col-md-4">
-		  <label class="form-label">Teléfono móvil</label>
-		  <input class="form-control"t ype="number" name="txtCellphone" id="txtCellphone" required >
-		</div>
-		<div class="col-md-4">
-		  <label class="form-label">E-mail</label>
-		  <input class="form-control" type="email" class="field" name="txtemail" id="txtemail" required>
+        
 
-		</div>
-		<div class="col-md-12"rows="5">
-		  <label class="form-label">Indicaciones adicionales</label>
-		  <input class="form-control" name="txtmessage" >
-		</div>
-		
-		</div>
-		<center>
-			<div class="col-md-8" >
-			<br>
-			<button class="btn btn-primary form-control">Enviar</button>
-			</div>
-		</center>
+        <div class="col-md-6">
+          <label class="form-label">Dirección</label>
+          <input type="text" maxlength="200"class="form-control" name="txtAddress" id="txtAddress" required onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))  || event.charCode = [32] || event.charCode == [209] || event.charCode == [241]">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Parroquia</label>
+          <select class="form-select" name="cmbParish" class="field" id="cmbParish" required>
+            <option value="">Seleccione la parroquia</option>
+            <option value="LaConcepción">La Concepcion </option>
+            <option value="Cochapamba ">Cochapamba </option>
+            <option value="Atahualpa">Atahualpa</option>
+            <option value="Jipijapa">Jipijapa</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Teléfono móvil</label>
+          <input class="form-control" t ype="number" name="txtCellphone" id="txtCellphone" maxlength="10" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" >
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">E-mail</label>
+          <input class="form-control" type="email" class="field" name="txtemail" id="txtemail" required>
 
-	</form>
-	</div>
+        </div>
+        <div class="col-md-12"rows="5">
+          <label class="form-label">Indicaciones adicionales</label>
+          <input class="form-control" name="txtmessage" >
+        </div>
+        
+        </div>
+        <center>
+            <div class="col-md-8" >
+            <br>
+            <button class="btn btn-primary form-control">Enviar</button>
+            </div>
+        </center>
+
+    </form>
+    </div>
 
 </body>
 
 </html>
+
