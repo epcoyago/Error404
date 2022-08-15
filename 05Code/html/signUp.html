@@ -81,7 +81,7 @@
 
                   <div class="col-md-5">
                     <label class="form-label">Nombre de Usuario</label>
-                    <input type="text" class="form-control" name="txtUserame" id="txtUserame" maxlength="50" required autocomplete="off" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))|| event.charCode == [209] || event.charCode == [241]" required>
+                    <input type="text" class="form-control" name="txtUserame" id="txtUserame" maxlength="20"class="form-control" name="txtAddress" id="txtAddress" required onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)) || event.charCode == [209] || event.charCode == [241]">
                     <br>
                   </div>
                   <br>
@@ -102,7 +102,7 @@
 
                   <div class="col-md-4">
                     <label class="form-label">Teléfono móvil</label>
-                    <input class="form-control" type="number" name="txtCellphone" id="txtCellphone" required>
+                    <input class="form-control" t ype="number" name="txtCellphone" id="txtCellphone" maxlength="10" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
                   </div>
                   <div class="col-md-6">
                     <br>
@@ -219,13 +219,13 @@
                   <div class="col-md-6">
                     <br>
                     <label class="form-label">Contraseña</label>
-                    <input class="form-control" type="text" class="field" name="txtPassword" id="txtPassword" required>
+                    <input class="form-control" type="password" class="field" name="txtPassword" id="txtPassword" required>
                   </div>
 
                   <div class="col-md-6">
                     <br>
                     <label class="form-label">Confirmar Contraseña</label>
-                    <input class="form-control" type="text" class="field" name="txtConfirmPass" id="txtConfirmPass"
+                    <input class="form-control" type="password" class="field" name="txtConfirmPass" id="txtConfirmPass"
                       required>
                   </div>
               </div>
