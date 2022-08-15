@@ -56,3 +56,15 @@ new Vue({
         }
     }
 });
+var txtSoloNumeros = document.getElementById("txtCellphone")
+txtSoloNumeros.addEventListener("input", function (event) {
+    validarTextoEntrada(this, "[0-9]")
+})
+var txtSoloLetras = document.getElementById("txtfullname")
+txtSoloLetras.addEventListener("input", function (event) {
+    validarTextoEntrada(this, "[a-z ]")
+})
+var txtPersonalizado = document.getElementById("txtAddress")
+txtPersonalizado.addEventListener("input", function (event) {
+    validarTextoEntrada(this, "[0-9a-z]")
+})
