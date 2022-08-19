@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<title>LOGIN</title>
+	<title>Login</title>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,20 +62,19 @@
 							</div>
 							<div class="row">
 								<br><br><br>
-								<form @submit.prevent="sendForm()" control="" class="form-group">
+								<form id="login-form">
 									<div class="row">
-										<input type="email" v-model="form.email" :class="{'error':validaEmail}" name="Usuario" id="Usuario" class="form__input"
-											placeholder="Usuario" required>
+										<input type="text" placeholder="Enter username..." id="username" />
+									
+										
 									</div>
 									<div class="row">
-										<!-- <span class="fa fa-lock"></span> -->
-										<input type="password"  v-if="form.type!=2"  :class="{'error':validaPassword}" name="Constraseña" id="Constraseña" class="form__input"
-											placeholder="Constraseña"  v-model="form.password"  required>
+										<input type="password" placeholder="Enter password..." id="password" />
 									</div>
 
 									<div class="col-md-12">
 										<br>
-										<button class="btn btn-primary form-control" href="../index.html">Entrar</button>
+										<input type="submit" value="Acceder" />
 									</div>
 
 								</form>
@@ -105,7 +104,7 @@
 	<div class="container p-2 my-2 bg-dark text-white">
 		<h5 style="text-align: center;">TODOS LOS DERECHOS RESERVADOS GRUPO2</h5>
 	</div>
-	<script src="/js/validation.js"></script>
+	<script src="../js/login.js"></script>
 </body>
 
 </html>
